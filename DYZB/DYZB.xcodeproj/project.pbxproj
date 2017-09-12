@@ -300,6 +300,7 @@
 				D58B5EC51F66803B0095E550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
