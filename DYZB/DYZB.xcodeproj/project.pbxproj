@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D58B5EB51F66803B0095E550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B5EB41F66803B0095E550 /* AppDelegate.swift */; };
 		D58B5EBA1F66803B0095E550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58B5EB81F66803B0095E550 /* Main.storyboard */; };
 		D58B5EBC1F66803B0095E550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58B5EBB1F66803B0095E550 /* Assets.xcassets */; };
 		D58B5EBF1F66803B0095E550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58B5EBD1F66803B0095E550 /* LaunchScreen.storyboard */; };
+		D5EFC5251F678A6C0042FE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EFC5241F678A6C0042FE94 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D58B5EB41F66803B0095E550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		D58B5EB91F66803B0095E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D58B5EBB1F66803B0095E550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58B5EBE1F66803B0095E550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5EFC5241F678A6C0042FE94 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,62 +33,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D57B25681F677C390055EA4A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D58B5EB41F66803B0095E550 /* AppDelegate.swift */,
-				D57B256C1F677C390055EA4A /* Main */,
-				D57B256A1F677C390055EA4A /* Home */,
-				D57B256B1F677C390055EA4A /* Live */,
-				D57B25691F677C390055EA4A /* Follow */,
-				D57B256D1F677C390055EA4A /* Profile */,
-				D57B256E1F677C390055EA4A /* Tools */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		D57B25691F677C390055EA4A /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Follow;
-			sourceTree = "<group>";
-		};
-		D57B256A1F677C390055EA4A /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		D57B256B1F677C390055EA4A /* Live */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		D57B256C1F677C390055EA4A /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		D57B256D1F677C390055EA4A /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		D57B256E1F677C390055EA4A /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		D58B5EA81F66803B0095E550 = {
 			isa = PBXGroup;
 			children = (
@@ -108,13 +52,69 @@
 		D58B5EB31F66803B0095E550 /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
-				D57B25681F677C390055EA4A /* Classes */,
+				D5EFC5241F678A6C0042FE94 /* AppDelegate.swift */,
+				D5EFC51B1F678A2C0042FE94 /* Classes */,
 				D58B5EB81F66803B0095E550 /* Main.storyboard */,
 				D58B5EBB1F66803B0095E550 /* Assets.xcassets */,
 				D58B5EBD1F66803B0095E550 /* LaunchScreen.storyboard */,
 				D58B5EC01F66803B0095E550 /* Info.plist */,
 			);
 			path = DYZB;
+			sourceTree = "<group>";
+		};
+		D5EFC51B1F678A2C0042FE94 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5EFC51F1F678A2C0042FE94 /* Main */,
+				D5EFC51D1F678A2C0042FE94 /* Home */,
+				D5EFC51E1F678A2C0042FE94 /* Live */,
+				D5EFC51C1F678A2C0042FE94 /* Follow */,
+				D5EFC5201F678A2C0042FE94 /* Profile */,
+				D5EFC5211F678A2C0042FE94 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5EFC51C1F678A2C0042FE94 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		D5EFC51D1F678A2C0042FE94 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D5EFC51E1F678A2C0042FE94 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		D5EFC51F1F678A2C0042FE94 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D5EFC5201F678A2C0042FE94 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D5EFC5211F678A2C0042FE94 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +150,7 @@
 					D58B5EB01F66803B0095E550 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YV2XMCDUJ9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -190,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58B5EB51F66803B0095E550 /* AppDelegate.swift in Sources */,
+				D5EFC5251F678A6C0042FE94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,12 +314,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -327,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
