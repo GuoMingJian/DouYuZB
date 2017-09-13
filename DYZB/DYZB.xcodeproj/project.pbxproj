@@ -14,6 +14,12 @@
 		D570A5211F69247800E287EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D570A51F1F69247800E287EB /* Main.storyboard */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
+		D5B360761F69288600B0B105 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B360751F69288600B0B105 /* MainViewController.swift */; };
+		D5B360781F6928B300B0B105 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B360771F6928B300B0B105 /* HomeViewController.swift */; };
+		D5B3607A1F6928C400B0B105 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B360791F6928C400B0B105 /* LiveViewController.swift */; };
+		D5B3607C1F6928CF00B0B105 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3607B1F6928CF00B0B105 /* FollowViewController.swift */; };
+		D5B3607E1F6928DE00B0B105 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3607D1F6928DE00B0B105 /* ProfileViewController.swift */; };
+		D5B360801F69293A00B0B105 /* MJTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3607F1F69293A00B0B105 /* MJTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		D5B360751F69288600B0B105 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D5B360771F6928B300B0B105 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D5B360791F6928C400B0B105 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		D5B3607B1F6928CF00B0B105 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		D5B3607D1F6928DE00B0B105 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D5B3607F1F69293A00B0B105 /* MJTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A23B561F68E31D005730A7 /* Follow.storyboard */,
+				D5B3607B1F6928CF00B0B105 /* FollowViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -91,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A23B511F68E2E0005730A7 /* Home.storyboard */,
+				D5B360771F6928B300B0B105 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -99,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D54C41931F6921EF00AC4086 /* Live.storyboard */,
+				D5B360791F6928C400B0B105 /* LiveViewController.swift */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -107,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D570A51F1F69247800E287EB /* Main.storyboard */,
+				D5B360751F69288600B0B105 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -115,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				D54C41961F6921FA00AC4086 /* Profile.storyboard */,
+				D5B3607D1F6928DE00B0B105 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -122,6 +139,7 @@
 		D5EFC5211F678A2C0042FE94 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D5B3607F1F69293A00B0B105 /* MJTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -203,7 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B360801F69293A00B0B105 /* MJTools.swift in Sources */,
+				D5B3607E1F6928DE00B0B105 /* ProfileViewController.swift in Sources */,
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
+				D5B360761F69288600B0B105 /* MainViewController.swift in Sources */,
+				D5B3607C1F6928CF00B0B105 /* FollowViewController.swift in Sources */,
+				D5B3607A1F6928C400B0B105 /* LiveViewController.swift in Sources */,
+				D5B360781F6928B300B0B105 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +380,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,7 +397,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
