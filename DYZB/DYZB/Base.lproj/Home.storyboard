@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--首页-->
+        <!--Home View Controller-->
         <scene sceneID="erO-Fz-q1P">
             <objects>
                 <viewController id="chh-eq-O4R" customClass="HomeViewController" customModule="DYZB" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="首页" id="2ss-Gu-wuk"/>
+                    <navigationItem key="navigationItem" id="2ss-Gu-wuk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ZP-k1-AUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
