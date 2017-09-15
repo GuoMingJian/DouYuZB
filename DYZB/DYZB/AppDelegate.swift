@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //全局修改TabBar颜色
-        UITabBar.appearance().tintColor = UIColor.orange;
+        UITabBar.appearance().tintColor = UIColor.orange
         
         return true
     }

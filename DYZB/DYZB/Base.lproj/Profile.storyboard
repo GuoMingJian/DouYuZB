@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--我的-->
         <scene sceneID="COX-RI-aGi">
             <objects>
-                <viewController id="tWq-9K-5RZ" sceneMemberID="viewController">
+                <viewController id="tWq-9K-5RZ" customClass="ProfileViewController" customModule="DYZB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZDl-X5-l0X"/>
                         <viewControllerLayoutGuide type="bottom" id="jEN-H7-0Ol"/>
