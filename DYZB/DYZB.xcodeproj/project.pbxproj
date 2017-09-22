@@ -20,6 +20,8 @@
 		D54C41981F6921FA00AC4086 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54C41961F6921FA00AC4086 /* Profile.storyboard */; };
 		D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570A5171F6923EF00E287EB /* AppDelegate.swift */; };
 		D570A5211F69247800E287EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D570A51F1F69247800E287EB /* Main.storyboard */; };
+		D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C71F6FA0320043E62C /* PageContentView.swift */; };
+		D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C91F6FAA560043E62C /* UIColor-Extension.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		D54C41971F6921FA00AC4086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		D570A5171F6923EF00E287EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DYZB/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		D570A5201F69247800E287EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D58344C71F6FA0320043E62C /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		D58344C91F6FAA560043E62C /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				D52831E41F6BC2B800EFEEE2 /* PageTitleView.swift */,
+				D58344C71F6FA0320043E62C /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D52831E21F6BB8CB00EFEEE2 /* UIBarButtonItem-Extension.swift */,
+				D58344C91F6FAA560043E62C /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -305,13 +311,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = com.joy.www;
 				TargetAttributes = {
 					D58B5EB01F66803B0095E550 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YV2XMCDUJ9;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -358,12 +364,14 @@
 				D52831E51F6BC2B800EFEEE2 /* PageTitleView.swift in Sources */,
 				D52831CA1F6B6D2100EFEEE2 /* MainViewController.swift in Sources */,
 				D52831D01F6B6D3A00EFEEE2 /* LiveViewController.swift in Sources */,
+				D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */,
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
 				D52831E71F6BC5C300EFEEE2 /* Common.swift in Sources */,
 				D52831D61F6B6D5000EFEEE2 /* ProfileViewController.swift in Sources */,
 				D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */,
 				D52831D31F6B6D4600EFEEE2 /* FollowViewController.swift in Sources */,
 				D52831E31F6BB8CB00EFEEE2 /* UIBarButtonItem-Extension.swift in Sources */,
+				D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +436,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -436,7 +446,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -459,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -478,7 +492,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -486,7 +502,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -524,7 +544,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -540,7 +561,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
