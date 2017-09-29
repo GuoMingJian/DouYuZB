@@ -20,10 +20,18 @@
 		D54C41981F6921FA00AC4086 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54C41961F6921FA00AC4086 /* Profile.storyboard */; };
 		D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570A5171F6923EF00E287EB /* AppDelegate.swift */; };
 		D570A5211F69247800E287EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D570A51F1F69247800E287EB /* Main.storyboard */; };
+		D57C5DAC1F79F75900B6B36D /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C5DAA1F79F75900B6B36D /* CollectionNormalCell.swift */; };
+		D57C5DAD1F79F75900B6B36D /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57C5DAB1F79F75900B6B36D /* CollectionNormalCell.xib */; };
+		D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C5DAE1F7A043100B6B36D /* CollectionPrettyCell.swift */; };
+		D57C5DB11F7A043100B6B36D /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */; };
 		D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C71F6FA0320043E62C /* PageContentView.swift */; };
 		D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C91F6FAA560043E62C /* UIColor-Extension.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
+		D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */; };
+		D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D271F78EB8200BD0913 /* GameViewController.swift */; };
+		D5D50D2B1F78FA9900BD0913 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */; };
+		D5D50D2C1F78FA9900BD0913 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +48,20 @@
 		D54C41971F6921FA00AC4086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		D570A5171F6923EF00E287EB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = DYZB/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		D570A5201F69247800E287EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		D57C5DAA1F79F75900B6B36D /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		D57C5DAB1F79F75900B6B36D /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		D57C5DAE1F7A043100B6B36D /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		D58344C71F6FA0320043E62C /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		D58344C91F6FAA560043E62C /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		D5D50D271F78EB8200BD0913 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,8 @@
 			children = (
 				D5A23B511F68E2E0005730A7 /* Home.storyboard */,
 				D52831CC1F6B6D3100EFEEE2 /* HomeViewController.swift */,
+				D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */,
+				D5D50D271F78EB8200BD0913 /* GameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +134,10 @@
 			children = (
 				D52831E41F6BC2B800EFEEE2 /* PageTitleView.swift */,
 				D58344C71F6FA0320043E62C /* PageContentView.swift */,
+				D57C5DAA1F79F75900B6B36D /* CollectionNormalCell.swift */,
+				D57C5DAB1F79F75900B6B36D /* CollectionNormalCell.xib */,
+				D57C5DAE1F7A043100B6B36D /* CollectionPrettyCell.swift */,
+				D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +152,8 @@
 		D52831DA1F6B6E1400EFEEE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */,
+				D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,7 +340,7 @@
 				TargetAttributes = {
 					D58B5EB01F66803B0095E550 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YV2XMCDUJ9;
+						DevelopmentTeam = 8TS34KC67Y;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -348,8 +372,11 @@
 				D54C41951F6921EF00AC4086 /* Live.storyboard in Resources */,
 				D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */,
 				D54C41921F691BA200AC4086 /* Assets.xcassets in Resources */,
+				D5D50D2C1F78FA9900BD0913 /* CollectionHeaderView.xib in Resources */,
 				D570A5211F69247800E287EB /* Main.storyboard in Resources */,
 				D54C41981F6921FA00AC4086 /* Profile.storyboard in Resources */,
+				D57C5DAD1F79F75900B6B36D /* CollectionNormalCell.xib in Resources */,
+				D57C5DB11F7A043100B6B36D /* CollectionPrettyCell.xib in Resources */,
 				D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,11 +392,16 @@
 				D52831CA1F6B6D2100EFEEE2 /* MainViewController.swift in Sources */,
 				D52831D01F6B6D3A00EFEEE2 /* LiveViewController.swift in Sources */,
 				D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */,
+				D57C5DAC1F79F75900B6B36D /* CollectionNormalCell.swift in Sources */,
+				D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */,
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
+				D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */,
 				D52831E71F6BC5C300EFEEE2 /* Common.swift in Sources */,
+				D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */,
 				D52831D61F6B6D5000EFEEE2 /* ProfileViewController.swift in Sources */,
 				D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */,
 				D52831D31F6B6D4600EFEEE2 /* FollowViewController.swift in Sources */,
+				D5D50D2B1F78FA9900BD0913 /* CollectionHeaderView.swift in Sources */,
 				D52831E31F6BB8CB00EFEEE2 /* UIBarButtonItem-Extension.swift in Sources */,
 				D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */,
 			);
@@ -537,7 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV2XMCDUJ9;
+				DEVELOPMENT_TEAM = 8TS34KC67Y;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -555,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = YV2XMCDUJ9;
+				DEVELOPMENT_TEAM = 8TS34KC67Y;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

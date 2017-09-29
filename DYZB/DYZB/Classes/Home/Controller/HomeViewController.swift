@@ -26,12 +26,13 @@ class HomeViewController: UIViewController {
     lazy var pageContentView : PageContentView = {[weak self] in
         
         //1.确定内容frame
-        let contentH = kScreenH - kNavigationH - kTitleViewH
+        let contentH = kScreenH - kNavigationH - kTitleViewH - kTabBarH
         let contentFrame = CGRect(x: 0, y: kNavigationH + kTitleViewH, width: kScreenW, height: contentH)
         
         //2.确定所有的子控制器
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
+        childVcs.append(RecommendViewController())
+        for _ in 0..<3 {
         
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
@@ -107,7 +108,7 @@ extension HomeViewController : PageContentViewDelegate
 {
     func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int)
     {
-        print("progress:\(progress) sourceIndex:\(sourceIndex) targetIndex\(targetIndex)")
+        //print("progress:\(progress) sourceIndex:\(sourceIndex) targetIndex\(targetIndex)")
         pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
