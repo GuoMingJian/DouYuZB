@@ -70,13 +70,12 @@ extension UIColor
         var g : CGFloat = 0
         var b : CGFloat = 0
         var a : CGFloat = 0
-        var hexStr : String = ""
-        
         self.getRed(&r, green: &g, blue: &b, alpha: &a)
-        let rgb = (Int) (r * 255.0)<<16 | (Int) (g * 255.0)<<8 | (Int) (b * 255.0)<<0;
         
-        hexStr = String(format: "%06x", rgb)
-        
+        let hexStr : String = String(format: "%02X%02X%02X",
+                        Int(r * 0xff),
+                        Int(g * 0xff),
+                        Int(b * 0xff))
         return hexStr
     }
 }

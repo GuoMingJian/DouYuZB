@@ -26,12 +26,14 @@
 		D57C5DB11F7A043100B6B36D /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */; };
 		D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C71F6FA0320043E62C /* PageContentView.swift */; };
 		D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C91F6FAA560043E62C /* UIColor-Extension.swift */; };
+		D58B6F9F1FA323F500698999 /* MJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
 		D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */; };
 		D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D271F78EB8200BD0913 /* GameViewController.swift */; };
 		D5D50D2B1F78FA9900BD0913 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */; };
 		D5D50D2C1F78FA9900BD0913 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */; };
+		EBD2AE80375B85C8330E36C8 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2803A786B2ECD9C797972DB /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,12 +58,16 @@
 		D58344C91F6FAA560043E62C /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJNetworkTools.swift; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		D5D50D271F78EB8200BD0913 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		F2803A786B2ECD9C797972DB /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8772839C1B91AEF4589B648 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
+		F8A71B52F4A6E9975C969891 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD2AE80375B85C8330E36C8 /* Pods_DYZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABF02B39A2A1953820C544BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A71B52F4A6E9975C969891 /* Pods-DYZB.debug.xcconfig */,
+				F8772839C1B91AEF4589B648 /* Pods-DYZB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDB28CCA6782D4CFCA5A41C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2803A786B2ECD9C797972DB /* Pods_DYZB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D52831C81F6B6D2100EFEEE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +238,8 @@
 			children = (
 				D58B5EB31F66803B0095E550 /* DYZB */,
 				D58B5EB21F66803B0095E550 /* Products */,
+				ABF02B39A2A1953820C544BA /* Pods */,
+				CDB28CCA6782D4CFCA5A41C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,6 +330,7 @@
 			children = (
 				D52831E11F6BB68000EFEEE2 /* Extension */,
 				D52831E61F6BC5C300EFEEE2 /* Common.swift */,
+				D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -315,9 +342,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D58B5EC31F66803B0095E550 /* Build configuration list for PBXNativeTarget "DYZB" */;
 			buildPhases = (
+				42864185DD042DA6F67188D6 /* [CP] Check Pods Manifest.lock */,
 				D58B5EAD1F66803B0095E550 /* Sources */,
 				D58B5EAE1F66803B0095E550 /* Frameworks */,
 				D58B5EAF1F66803B0095E550 /* Resources */,
+				47A4DD6E0AE73C6FA6E12AA7 /* [CP] Embed Pods Frameworks */,
+				546A8A9597F8113EA096F27B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,7 +370,7 @@
 				TargetAttributes = {
 					D58B5EB01F66803B0095E550 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8TS34KC67Y;
+						DevelopmentTeam = YV2XMCDUJ9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -383,6 +413,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42864185DD042DA6F67188D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYZB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47A4DD6E0AE73C6FA6E12AA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546A8A9597F8113EA096F27B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D58B5EAD1F66803B0095E550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -401,6 +485,7 @@
 				D52831D61F6B6D5000EFEEE2 /* ProfileViewController.swift in Sources */,
 				D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */,
 				D52831D31F6B6D4600EFEEE2 /* FollowViewController.swift in Sources */,
+				D58B6F9F1FA323F500698999 /* MJNetworkTools.swift in Sources */,
 				D5D50D2B1F78FA9900BD0913 /* CollectionHeaderView.swift in Sources */,
 				D52831E31F6BB8CB00EFEEE2 /* UIBarButtonItem-Extension.swift in Sources */,
 				D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */,
@@ -565,16 +650,20 @@
 		};
 		D58B5EC41F66803B0095E550 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A71B52F4A6E9975C969891 /* Pods-DYZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8TS34KC67Y;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -583,16 +672,20 @@
 		};
 		D58B5EC51F66803B0095E550 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8772839C1B91AEF4589B648 /* Pods-DYZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8TS34KC67Y;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV2XMCDUJ9;
 				INFOPLIST_FILE = DYZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joy.www.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
