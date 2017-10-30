@@ -21,6 +21,7 @@ private let kPrettyCellID = "kPrettyCellID"
 class RecommendViewController: UIViewController {
     
     //MARK:- 懒加载属性
+    private lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     private lazy var collectionView : UICollectionView = {[unowned self] in
         
         //1.创建布局
@@ -63,6 +64,13 @@ extension RecommendViewController
     {
         //1.添加collectionView
         view.addSubview(collectionView)
+    }
+}
+
+//MARK:- 请求数据
+extension RecommendViewController {
+    private func loadData() {
+        recommendVM.requestData()
     }
 }
 

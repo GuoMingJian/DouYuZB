@@ -27,6 +27,7 @@
 		D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C71F6FA0320043E62C /* PageContentView.swift */; };
 		D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C91F6FAA560043E62C /* UIColor-Extension.swift */; };
 		D58B6F9F1FA323F500698999 /* MJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */; };
+		D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6FA11FA3333300698999 /* RecommendViewModel.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
 		D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */; };
@@ -59,6 +60,7 @@
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJNetworkTools.swift; sourceTree = "<group>"; };
+		D58B6FA11FA3333300698999 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -262,6 +264,14 @@
 			path = DYZB;
 			sourceTree = "<group>";
 		};
+		D58B6FA01FA332BF00698999 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D58B6FA11FA3333300698999 /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D5EFC51B1F678A2C0042FE94 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +298,7 @@
 		D5EFC51D1F678A2C0042FE94 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D58B6FA01FA332BF00698999 /* ViewModel */,
 				D52831D91F6B6E1400EFEEE2 /* Model */,
 				D52831DA1F6B6E1400EFEEE2 /* View */,
 				D52831CB1F6B6D3100EFEEE2 /* Controller */,
@@ -479,6 +490,7 @@
 				D57C5DAC1F79F75900B6B36D /* CollectionNormalCell.swift in Sources */,
 				D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */,
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
+				D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */,
 				D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */,
 				D52831E71F6BC5C300EFEEE2 /* Common.swift in Sources */,
 				D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */,
