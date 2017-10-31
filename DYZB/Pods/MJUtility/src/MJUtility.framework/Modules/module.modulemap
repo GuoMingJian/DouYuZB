@@ -1,0 +1,6 @@
+framework module MJUtility {
+  umbrella header "MJUtility.h"
+
+  export *
+  module * { export * }
+}

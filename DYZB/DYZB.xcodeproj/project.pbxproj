@@ -26,8 +26,11 @@
 		D57C5DB11F7A043100B6B36D /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */; };
 		D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C71F6FA0320043E62C /* PageContentView.swift */; };
 		D58344CA1F6FAA560043E62C /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58344C91F6FAA560043E62C /* UIColor-Extension.swift */; };
+		D58842F61FA80F71000C4DCB /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58842F51FA80F71000C4DCB /* NSDate-Extension.swift */; };
 		D58B6F9F1FA323F500698999 /* MJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */; };
 		D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6FA11FA3333300698999 /* RecommendViewModel.swift */; };
+		D59053061FA8586C00650904 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59053051FA8586C00650904 /* AnchorGroup.swift */; };
+		D59053081FA879B000650904 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59053071FA879B000650904 /* AnchorModel.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
 		D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */; };
@@ -57,10 +60,13 @@
 		D57C5DAF1F7A043100B6B36D /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		D58344C71F6FA0320043E62C /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		D58344C91F6FAA560043E62C /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		D58842F51FA80F71000C4DCB /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		D58B5EB11F66803B0095E550 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJNetworkTools.swift; sourceTree = "<group>"; };
 		D58B6FA11FA3333300698999 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		D59053051FA8586C00650904 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		D59053071FA879B000650904 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +157,8 @@
 		D52831D71F6B6E0B00EFEEE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D59053051FA8586C00650904 /* AnchorGroup.swift */,
+				D59053071FA879B000650904 /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			children = (
 				D52831E21F6BB8CB00EFEEE2 /* UIBarButtonItem-Extension.swift */,
 				D58344C91F6FAA560043E62C /* UIColor-Extension.swift */,
+				D58842F51FA80F71000C4DCB /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -451,10 +460,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/MJUtility/src/MJUtility.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJUtility.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,8 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52831E51F6BC2B800EFEEE2 /* PageTitleView.swift in Sources */,
+				D59053081FA879B000650904 /* AnchorModel.swift in Sources */,
 				D52831CA1F6B6D2100EFEEE2 /* MainViewController.swift in Sources */,
 				D52831D01F6B6D3A00EFEEE2 /* LiveViewController.swift in Sources */,
+				D58842F61FA80F71000C4DCB /* NSDate-Extension.swift in Sources */,
 				D58344C81F6FA0320043E62C /* PageContentView.swift in Sources */,
 				D57C5DAC1F79F75900B6B36D /* CollectionNormalCell.swift in Sources */,
 				D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */,
@@ -494,6 +507,7 @@
 				D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */,
 				D52831E71F6BC5C300EFEEE2 /* Common.swift in Sources */,
 				D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */,
+				D59053061FA8586C00650904 /* AnchorGroup.swift in Sources */,
 				D52831D61F6B6D5000EFEEE2 /* ProfileViewController.swift in Sources */,
 				D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */,
 				D52831D31F6B6D4600EFEEE2 /* FollowViewController.swift in Sources */,

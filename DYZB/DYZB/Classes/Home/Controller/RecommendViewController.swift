@@ -53,6 +53,9 @@ class RecommendViewController: UIViewController {
         
         //设置UI界面
         setupUI()
+        
+        //请求数据
+        loadData()
     }
     
 }
