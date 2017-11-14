@@ -6,7 +6,8 @@ use_frameworks!
 
 target 'DYZB' do
 
-  pod 'Alamofire'
+  pod 'Alamofire'       #网络数据请求
+  pod 'Kingfisher'      #网络图片加载
   pod 'MJUtility'
 
 end
