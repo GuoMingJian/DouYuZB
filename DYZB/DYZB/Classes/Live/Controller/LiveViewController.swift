@@ -9,9 +9,20 @@
 import UIKit
 
 class LiveViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let bgView : UIImageView = UIImageView()
+        bgView.image = UIImage.init(named: "bg.jpg")
+        bgView.frame = CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH)
+        
+        self.view.addSubview(bgView)
 
         // Do any additional setup after loading the view.
     }
