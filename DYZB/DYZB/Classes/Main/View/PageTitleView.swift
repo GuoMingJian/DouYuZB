@@ -133,8 +133,11 @@ extension PageTitleView
 {
     @objc func titleLabelClick(tapGes : UITapGestureRecognizer)
     {
-        //1.当前Label
+        //0.当前Label
         guard let currentLabel = tapGes.view as? UILabel else {return}
+        
+        //1.当重复点击相同Title，直接返回
+        if currentLabel.tag == currentIndex { return }
         
         //2.之前Label
         let beforeLabel = titleLabels[currentIndex]

@@ -30,6 +30,7 @@
 		D58963911FAAFF3300A70D27 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D58963901FAAFF3300A70D27 /* bg.jpg */; };
 		D58B6F9F1FA323F500698999 /* MJNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */; };
 		D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B6FA11FA3333300698999 /* RecommendViewModel.swift */; };
+		D58B70AE1FBAEDB8008DC815 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B70AD1FBAEDB8008DC815 /* CollectionBaseCell.swift */; };
 		D59053061FA8586C00650904 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59053051FA8586C00650904 /* AnchorGroup.swift */; };
 		D59053081FA879B000650904 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59053071FA879B000650904 /* AnchorModel.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
@@ -67,6 +68,7 @@
 		D58B5EC01F66803B0095E550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D58B6F9E1FA323F500698999 /* MJNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJNetworkTools.swift; sourceTree = "<group>"; };
 		D58B6FA11FA3333300698999 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		D58B70AD1FBAEDB8008DC815 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		D59053051FA8586C00650904 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		D59053071FA879B000650904 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
@@ -171,6 +173,7 @@
 			children = (
 				D52831E41F6BC2B800EFEEE2 /* PageTitleView.swift */,
 				D58344C71F6FA0320043E62C /* PageContentView.swift */,
+				D58B70AD1FBAEDB8008DC815 /* CollectionBaseCell.swift */,
 				D57C5DAA1F79F75900B6B36D /* CollectionNormalCell.swift */,
 				D57C5DAB1F79F75900B6B36D /* CollectionNormalCell.xib */,
 				D57C5DAE1F7A043100B6B36D /* CollectionPrettyCell.swift */,
@@ -502,6 +505,7 @@
 			files = (
 				D52831E51F6BC2B800EFEEE2 /* PageTitleView.swift in Sources */,
 				D59053081FA879B000650904 /* AnchorModel.swift in Sources */,
+				D58B70AE1FBAEDB8008DC815 /* CollectionBaseCell.swift in Sources */,
 				D52831CA1F6B6D2100EFEEE2 /* MainViewController.swift in Sources */,
 				D52831D01F6B6D3A00EFEEE2 /* LiveViewController.swift in Sources */,
 				D58842F61FA80F71000C4DCB /* NSDate-Extension.swift in Sources */,

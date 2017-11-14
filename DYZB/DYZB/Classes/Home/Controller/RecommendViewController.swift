@@ -97,22 +97,22 @@ extension RecommendViewController : UICollectionViewDataSource, UICollectionView
         let group = recommendVM.anchorGroups[indexPath.section]
         let anchor = group.anchors[indexPath.item]
         
-        //2.取出cell
+        //2.定义cell
+        let cell : CollectionBaseCell!
+        
+        //3.取出cell
         if indexPath.section == 1
         {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
-            cell.anchor = anchor;
-            
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
         }
         else
         {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
-            cell.anchor = anchor;
-            
-            return cell
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
         }
         
+        //4.将模型赋值cell
+        cell.anchor = anchor;
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
