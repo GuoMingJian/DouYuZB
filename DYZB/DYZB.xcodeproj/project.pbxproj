@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D50D14151FBC27C7003C152E /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50D14141FBC27C7003C152E /* RecommendCycleView.swift */; };
+		D50D14171FBC281D003C152E /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50D14161FBC281D003C152E /* RecommendCycleView.xib */; };
 		D52831CA1F6B6D2100EFEEE2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52831C91F6B6D2100EFEEE2 /* MainViewController.swift */; };
 		D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52831CC1F6B6D3100EFEEE2 /* HomeViewController.swift */; };
 		D52831D01F6B6D3A00EFEEE2 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52831CF1F6B6D3A00EFEEE2 /* LiveViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D50D14141FBC27C7003C152E /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		D50D14161FBC281D003C152E /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		D52831C91F6B6D2100EFEEE2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D52831CC1F6B6D3100EFEEE2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D52831CF1F6B6D3A00EFEEE2 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			children = (
 				D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */,
 				D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */,
+				D50D14141FBC27C7003C152E /* RecommendCycleView.swift */,
+				D50D14161FBC281D003C152E /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 				D570A5211F69247800E287EB /* Main.storyboard in Resources */,
 				D54C41981F6921FA00AC4086 /* Profile.storyboard in Resources */,
 				D57C5DAD1F79F75900B6B36D /* CollectionNormalCell.xib in Resources */,
+				D50D14171FBC281D003C152E /* RecommendCycleView.xib in Resources */,
 				D57C5DB11F7A043100B6B36D /* CollectionPrettyCell.xib in Resources */,
 				D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */,
 				D58963911FAAFF3300A70D27 /* bg.jpg in Resources */,
@@ -515,6 +522,7 @@
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
 				D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */,
 				D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */,
+				D50D14151FBC27C7003C152E /* RecommendCycleView.swift in Sources */,
 				D52831E71F6BC5C300EFEEE2 /* Common.swift in Sources */,
 				D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */,
 				D59053061FA8586C00650904 /* AnchorGroup.swift in Sources */,
