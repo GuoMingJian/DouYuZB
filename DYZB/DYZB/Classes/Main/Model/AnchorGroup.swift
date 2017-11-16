@@ -34,7 +34,7 @@ class AnchorGroup: NSObject
     
     init(dict : [String : NSObject]) {
         super.init()
-
+        
         setValuesForKeys(dict)
     }
     

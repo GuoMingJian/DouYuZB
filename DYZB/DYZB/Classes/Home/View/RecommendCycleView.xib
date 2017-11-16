@@ -15,32 +15,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tNx-G6-TVj">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tNx-G6-TVj">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3P4-BO-MSE">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3P4-BO-MSE">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="t4T-7O-9jd"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="dxG-XT-ZuM"/>
+                    </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PUu-wg-A2J">
-                    <rect key="frame" x="326" y="113" width="39" height="37"/>
+                    <rect key="frame" x="326" y="116" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
             </subviews>
             <constraints>
-                <constraint firstItem="tNx-G6-TVj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4EG-qx-KKZ"/>
+                <constraint firstAttribute="trailing" secondItem="tNx-G6-TVj" secondAttribute="trailing" id="5rK-ZU-7X7"/>
+                <constraint firstItem="tNx-G6-TVj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A41-Od-4Wi"/>
                 <constraint firstAttribute="trailing" secondItem="PUu-wg-A2J" secondAttribute="trailing" constant="10" id="ElN-ux-LOB"/>
-                <constraint firstItem="tNx-G6-TVj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Jlm-NN-qjZ"/>
-                <constraint firstItem="tNx-G6-TVj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jgB-79-MFj"/>
-                <constraint firstAttribute="bottom" secondItem="PUu-wg-A2J" secondAttribute="bottom" id="kiz-ny-JGA"/>
-                <constraint firstItem="tNx-G6-TVj" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="mdU-b0-Oza"/>
+                <constraint firstItem="tNx-G6-TVj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ifb-4j-lK1"/>
+                <constraint firstAttribute="bottom" secondItem="PUu-wg-A2J" secondAttribute="bottom" constant="-3" id="kiz-ny-JGA"/>
+                <constraint firstAttribute="bottom" secondItem="tNx-G6-TVj" secondAttribute="bottom" id="oQ1-Ci-5Il"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="120" y="-16"/>
+            <connections>
+                <outlet property="collectionView" destination="tNx-G6-TVj" id="XUq-Cq-IkJ"/>
+                <outlet property="pageControl" destination="PUu-wg-A2J" id="Cbr-Hc-ZpQ"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="-14"/>
         </view>
     </objects>
 </document>
