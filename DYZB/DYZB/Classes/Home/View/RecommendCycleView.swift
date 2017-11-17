@@ -26,7 +26,7 @@ class RecommendCycleView: UIView {
             pageControl.numberOfPages = cycleModels?.count ?? 0
             
             //3.默认滚动到中间某一个位置
-            let indexPath = NSIndexPath.init(item: (cycleModels?.count ?? 0) * Int(kMaxArrCount / 2), section: 0)
+            let indexPath = NSIndexPath.init(item: (cycleModels?.count ?? 0) * Int(kMaxArrCount / 3), section: 0)
             collectionView.scrollToItem(at: indexPath as IndexPath, at: .left, animated: false)
             
             //4.添加轮播定时器
@@ -67,9 +67,11 @@ extension RecommendCycleView {
 
 //MARK:- 遵守UICollectionView的数据源协议
 extension RecommendCycleView : UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (cycleModels?.count ?? 0) * kMaxArrCount //collectionView cell自身会循环利用
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView .dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath) as! CollectionCycleCell
         
@@ -82,6 +84,7 @@ extension RecommendCycleView : UICollectionViewDataSource {
 
 //MARK:- 遵守UICollectionView的代理协议
 extension RecommendCycleView : UICollectionViewDelegate {
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         //1.获取滚动的偏移量
         let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
@@ -101,6 +104,7 @@ extension RecommendCycleView : UICollectionViewDelegate {
 
 //MARK:- 对定时器的操作方法
 extension RecommendCycleView {
+    
     private func addCycleTimer() {
         cycleTimer = Timer.init(timeInterval: kCycleTimeInterval, target: self, selector: #selector(self.scrollToNext), userInfo: nil, repeats: true)
         RunLoop.main.add(cycleTimer!, forMode: .commonModes)
