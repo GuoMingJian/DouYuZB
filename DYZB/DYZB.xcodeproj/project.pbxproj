@@ -47,10 +47,13 @@
 		D59053081FA879B000650904 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59053071FA879B000650904 /* AnchorModel.swift */; };
 		D5A23B531F68E2E0005730A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B511F68E2E0005730A7 /* Home.storyboard */; };
 		D5A23B581F68E31D005730A7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A23B561F68E31D005730A7 /* Follow.storyboard */; };
+		D5BC56E61FED00C90051AE72 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC56E51FED00C90051AE72 /* AmuseViewController.swift */; };
 		D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */; };
 		D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D271F78EB8200BD0913 /* GameViewController.swift */; };
 		D5D50D2B1F78FA9900BD0913 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */; };
 		D5D50D2C1F78FA9900BD0913 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */; };
+		D5E053291FFCBE6D002EB4E6 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E053281FFCBE6D002EB4E6 /* AmuseViewModel.swift */; };
+		D5E0532C1FFCD387002EB4E6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0532B1FFCD387002EB4E6 /* BaseViewModel.swift */; };
 		EBD2AE80375B85C8330E36C8 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2803A786B2ECD9C797972DB /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,10 +100,13 @@
 		D59053071FA879B000650904 /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		D5A23B521F68E2E0005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		D5A23B571F68E31D005730A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		D5BC56E51FED00C90051AE72 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		D5D50D271F78EB8200BD0913 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D5D50D291F78FA9900BD0913 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		D5D50D2A1F78FA9900BD0913 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		D5E053281FFCBE6D002EB4E6 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
+		D5E0532B1FFCD387002EB4E6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F2803A786B2ECD9C797972DB /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8772839C1B91AEF4589B648 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 		F8A71B52F4A6E9975C969891 /* Pods-DYZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				D52831CC1F6B6D3100EFEEE2 /* HomeViewController.swift */,
 				D5D50D251F78EAA500BD0913 /* RecommendViewController.swift */,
 				D5D50D271F78EB8200BD0913 /* GameViewController.swift */,
+				D5BC56E51FED00C90051AE72 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,6 +326,15 @@
 			children = (
 				D58B6FA11FA3333300698999 /* RecommendViewModel.swift */,
 				D55FF85A1FDFC1F6003B814E /* GameViewModel.swift */,
+				D5E053281FFCBE6D002EB4E6 /* AmuseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5E0532A1FFCD360002EB4E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5E0532B1FFCD387002EB4E6 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -371,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				D52831D71F6B6E0B00EFEEE2 /* Model */,
+				D5E0532A1FFCD360002EB4E6 /* ViewModel */,
 				D52831D81F6B6E0B00EFEEE2 /* View */,
 				D52831C81F6B6D2100EFEEE2 /* Controller */,
 			);
@@ -555,6 +572,7 @@
 				D5D50D281F78EB8200BD0913 /* GameViewController.swift in Sources */,
 				D570A5181F6923EF00E287EB /* AppDelegate.swift in Sources */,
 				D58B6FA21FA3333300698999 /* RecommendViewModel.swift in Sources */,
+				D5BC56E61FED00C90051AE72 /* AmuseViewController.swift in Sources */,
 				D5D50D261F78EAA500BD0913 /* RecommendViewController.swift in Sources */,
 				D57CE7731FBD6431007854BB /* CycleModel.swift in Sources */,
 				D55FF85D1FDFC4E3003B814E /* GameModel.swift in Sources */,
@@ -564,6 +582,8 @@
 				D57C5DB01F7A043100B6B36D /* CollectionPrettyCell.swift in Sources */,
 				D59053061FA8586C00650904 /* AnchorGroup.swift in Sources */,
 				D52831D61F6B6D5000EFEEE2 /* ProfileViewController.swift in Sources */,
+				D5E053291FFCBE6D002EB4E6 /* AmuseViewModel.swift in Sources */,
+				D5E0532C1FFCD387002EB4E6 /* BaseViewModel.swift in Sources */,
 				D55FF85B1FDFC1F6003B814E /* GameViewModel.swift in Sources */,
 				D57CE7791FBD84F0007854BB /* RecommendGameView.swift in Sources */,
 				D52831CD1F6B6D3100EFEEE2 /* HomeViewController.swift in Sources */,

@@ -30,7 +30,7 @@ class CycleModel: NSObject {
     //MARK:- 自定义构造函数
     init(dict : [String : NSObject]) {
         super.init()
-        
+
         setValuesForKeys(dict)
     }
     

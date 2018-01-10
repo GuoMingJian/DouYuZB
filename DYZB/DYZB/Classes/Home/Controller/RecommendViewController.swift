@@ -13,6 +13,7 @@ private let kItemW = (kScreenW - kItemMargin * 3) / 2
 private let kItemNormalH = kItemW * 3 / 4
 private let kItemPrettyH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
+
 private let kCycleViewH = kScreenW * 3 / 8
 private let kGameViewH : CGFloat = 90.0
 
@@ -108,7 +109,16 @@ extension RecommendViewController {
             self.collectionView.reloadData()
             
             //2.将数据传递给GameView
-            self.gameView.groups = self.recommendVM.anchorGroups
+            var groups = self.recommendVM.anchorGroups
+            //2.1.移除前两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+
+            //2.2.添加"更多组"
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            self.gameView.groups = groups
         }
         
         //请求无限轮播数据

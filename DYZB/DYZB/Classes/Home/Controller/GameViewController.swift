@@ -11,7 +11,9 @@ import UIKit
 private let kEdgeMargin : CGFloat  = 10
 private let kItemW : CGFloat = (kScreenW - 2 * kEdgeMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
-private let kHeaderViewH : CGFloat = 50;
+private let kHeaderViewH : CGFloat = 50
+
+private let kGameViewH : CGFloat = 90
 
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -40,6 +42,21 @@ class GameViewController: UIViewController {
         
         return collectionView
         
+        }()
+
+    fileprivate lazy var topHeaderView : CollectionHeaderView = {
+        let headerView = CollectionHeaderView.collectionHeaderView()
+        headerView.frame = CGRect(x: 0, y: -(kHeaderViewH + kGameViewH), width: kScreenW, height: kHeaderViewH)
+        headerView.iconImageView.image = UIImage(named: "Img_orange")
+        headerView.titleLabel.text = "常见"
+        headerView.moreBtn.isHidden = true
+        return headerView
+    }()
+
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
     
     //MARK:- 系统回调
@@ -54,7 +71,17 @@ class GameViewController: UIViewController {
 //MARK:- 设置UI界面
 extension GameViewController {
     fileprivate func setupUI() {
-        view.addSubview(self.collectionView)
+        //1.添加UICollectionView
+        view.addSubview(collectionView)
+
+        //2.添加顶部的HeaderView
+        collectionView.addSubview(topHeaderView)
+
+        //3.将常用游戏的view，添加到collectionView中
+        collectionView.addSubview(gameView)
+
+        //设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: (kHeaderViewH + kGameViewH), left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -62,7 +89,19 @@ extension GameViewController {
 extension GameViewController {
     fileprivate func loadData() {
         gameVM.loadAllGameData {
+            //1.展示全部游戏
             self.collectionView.reloadData()
+
+            //2.展示常见游戏
+            var tempArray = [BaseGameModel]()
+            for  i in 0..<10 {
+                if self.gameVM.games.count == i {
+                    break
+                }
+                tempArray.append(self.gameVM.games[i])
+            }
+            self.gameView.groups = tempArray
+//            self.gameView.groups = Array(self.gameVM.games[0..<10])//预防数组越界
         }
     }
 }

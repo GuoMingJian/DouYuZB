@@ -22,7 +22,16 @@ class CollectionHeaderView: UICollectionReusableView {
             iconImageView.image = UIImage(named: group?.icon_name ?? "home_header_normal")
         }
     }
+    
     @IBAction func moreBtnAction(_ sender: Any) {
         print("颜值-更多")
+    }
+}
+
+//MARK:- 从xib中快速创建的类方法
+extension CollectionHeaderView
+{
+    class func collectionHeaderView() -> CollectionHeaderView {
+        return Bundle.main.loadNibNamed("CollectionHeaderView", owner: nil, options: nil)?.first as! CollectionHeaderView
     }
 }

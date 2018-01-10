@@ -18,13 +18,13 @@ class MJNetworkTools {
     
     class func requestData(type : MethodType,
                            urlString : String,
-                           parameters : [String : String]? = nil,
+                           parameters : [String : Any]? = nil,
                            headers : [String : String]? = nil,
                            finishedCallback : @escaping (_ result : AnyObject) -> ()) {
         
         // 1.获取类型
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
-        
+
         // 2.发送网络请求
         Alamofire.request(urlString,
                           method: method,
