@@ -10,10 +10,9 @@
 
 import UIKit
 
-let kStatusBarH : CGFloat = 20            //状态栏高度
-let kNavigationBarH : CGFloat = 44        //导航栏Bar高度
-let kNavigationH : CGFloat = 64           //导航高度
-let kTabBarH : CGFloat = 49               //tabbar高度
-
-let kScreenW = UIScreen.main.bounds.size.width      //屏幕宽
-let kScreenH = UIScreen.main.bounds.size.height     //屏幕高
+let kStatusBarH = UIApplication.shared.statusBarFrame.size.height               //状态栏高度
+let kNavigationBarH = UINavigationController.init().navigationBar.frame.height  //导航栏Bar高度
+let kNavigationH = (kStatusBarH + kNavigationBarH)                              //导航高度
+let kTabBarH = UITabBarController.init().tabBar.frame.height                    //tabbar高度
+let kScreenW = UIScreen.main.bounds.size.width                                  //屏幕宽
+let kScreenH = UIScreen.main.bounds.size.height                                 //屏幕高

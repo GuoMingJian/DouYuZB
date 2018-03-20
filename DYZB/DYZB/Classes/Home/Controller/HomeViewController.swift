@@ -53,6 +53,11 @@ class HomeViewController: UIViewController {
         
         //设置UI界面
         setupUI()
+
+        print(kStatusBarH)
+        print(kNavigationBarH)
+        print(kNavigationH)
+        print(kTabBarH)
         
     }
 
